@@ -1,0 +1,23 @@
+# 专业术语表
+
+- AIVC（AI Virtual Cell，人工智能虚拟细胞）：用人工智能模型模拟细胞状态、响应和动态的研究方向。
+- Perturbation（扰动）：对细胞施加基因敲除、基因激活或药物处理，使状态发生变化。
+- Single-cell perturbation prediction（单细胞扰动预测）：根据初始细胞和处理条件预测扰动后的表达状态或分布。
+- Baseline（基线模型）：用于判断改进方法是否真正有效的原始或简化模型。
+- Embedding（嵌入表示）：把基因、细胞或扰动转换成神经网络可处理的数字向量。
+- Generalization（泛化能力）：模型面对训练时没有见过的数据仍能正确预测的能力。
+- OOD, Out-of-distribution（分布外）：测试数据的条件或分布超出训练数据覆盖范围。
+- Distributional prediction（分布级预测）：预测一群细胞的整体概率分布，而不只给一个平均表达向量。
+- Smoke test（冒烟测试）：用极小数据和极短运行验证整条流程能否连通，不用于证明性能。
+- CRISPR（成簇规律间隔短回文重复序列相关基因编辑技术）：可定向敲除、抑制或激活基因，用于观察细胞响应。
+- Perturb-seq（扰动测序）：把池化基因扰动与单细胞 RNA 测序结合，记录每个细胞的扰动和表达。
+- Tensor shape（张量形状）：数据张量每个维度的大小，例如“细胞数 × 基因数”。
+- AnnData（单细胞注释数据容器）：常用的单细胞数据对象，`X` 放表达矩阵，`obs` 放细胞信息，`var` 放基因信息。
+- Differentially expressed genes, DEG（差异表达基因）：在对照和扰动条件间表达显著变化的基因。
+- MSE, Mean Squared Error（均方误差）：预测值与真实值之差平方后的平均；容易被大量变化很小的基因主导。
+- Pearson correlation（皮尔逊相关系数）：衡量两个向量线性变化趋势是否一致，但绝对表达背景可能让它看起来过高。
+- GNN, Graph Neural Network（图神经网络）：让基因等节点沿关系边交换信息的神经网络。
+- VAE, Variational Autoencoder（变分自编码器）：把高维数据压到概率潜在空间，再从潜在表示重建或生成数据。
+- Optimal transport（最优传输）：寻找把一个细胞分布搬运到另一个分布的低成本映射。
+- Flow matching（流匹配）：学习一个连续速度场，把简单或对照分布逐步变成目标分布。
+- Additive baseline（加性基线）：把两个单基因扰动效应相加，作为双基因组合预测。

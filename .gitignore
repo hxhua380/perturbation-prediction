@@ -1,0 +1,68 @@
+# Secrets and local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Editors and OS
+.vscode/settings.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# Data, checkpoints, and large artifacts
+data/
+datasets/
+raw_data/
+processed_data/
+checkpoints/
+weights/
+wandb/
+mlruns/
+outputs/
+tmp/
+*.h5
+*.h5ad
+*.loom
+*.zarr
+*.npz
+*.npy
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.pkl
+*.joblib
+
+# Untracked upstream paper repositories; record URL/commit in upstream_info.md
+projects/*/upstream/
+
+# Archives and logs
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.log
+
+# Local paper copies; keep article/README.md as the tracked source index
+article/*.pdf
+
+# Keep curated small result documentation
+!results/
+!results/README.md
