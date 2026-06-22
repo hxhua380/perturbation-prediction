@@ -11,6 +11,7 @@
   - 建立论文 A/B/C/D 分级、阶段性 baseline 推荐、精读顺序和第一周计划。
   - 建立 `projects/<model_slug>/` 论文代码组织规范；未下载代码。
   - 初始化本地 Git `main` 分支；确定私有 GitHub 同步策略；排除论文 PDF，保留可追溯来源索引。
+  - 创建首次 commit `a23d04b`，绑定私有 GitHub 远程仓库，并完成 `main -> origin/main` 首次 push；本地与远程 commit 校验一致。
 - 文件：见本次新增的根目录 Markdown 文件及基础目录占位文件。
 
 ## 验证记录
